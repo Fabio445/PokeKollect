@@ -1,0 +1,14 @@
+Impostazione di core.autocrlf su true (Windows):
+
+Imposta core.autocrlf su true solo quando lavori su Windows. Questo farà in modo che Git converta automaticamente LF in CRLF quando si fa il checkout e CRLF in LF quando si fa il commit.
+
+bash
+Copia codice
+git config --global core.autocrlf true
+Impostazione di core.autocrlf su input (Linux):
+
+Imposta core.autocrlf su input quando lavori su sistemi Linux. Questo farà in modo che Git converta automaticamente CRLF in LF quando si fa il commit, ma non effettuerà alcuna conversione durante il checkout.
+
+bash
+Copia codice
+git config --global core.autocrlf input
